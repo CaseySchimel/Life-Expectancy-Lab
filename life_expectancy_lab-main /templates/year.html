@@ -1,0 +1,34 @@
+<html>
+<head>
+  <title>Casey's Life Expectancy Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Life Expectancy Lab - Casey Schimel</h1>
+  <h2>Year: {{year}}</h2>
+
+  <div id="north_america">
+    {% include 'north_america.svg' %}
+  </div>
+
+  <footer>
+    All data from <a href="https://data.worldbank.org/indicator/SP.DYN.LE00.IN?locations=MX-US-CA"> The World Bank</a>.
+  </footer>
+</body>
+
+<script>
+  Canada = document.getElementsByClassName("Canada")
+  for (fill of Canada) {
+    fill.style.fill = 'hsl(44, 0%, {{Canada}}%)'
+  }
+  Us = document.getElementsByClassName("US")
+  for (fill of Us) {
+    fill.style.fill = 'hsl(44, 0%, {{Us}}%)'
+  }
+  Mexico = document.getElementsByClassName("Mexico")
+  for (fill of Mexico) {
+    fill.style.fill = 'hsl(44, 0%, {{Mex}}%)'
+  }
+</script>
+</html>

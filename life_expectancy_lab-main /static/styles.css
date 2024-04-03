@@ -1,0 +1,45 @@
+body {
+  background-color: #f0f0f0; 
+}
+
+svg {
+  border: 2px dashed #333; 
+}
+
+
+.us {
+  stroke: #007bff; 
+}
+
+.us:hover {
+  stroke: #ff4757;
+  fill: #70a1ff; 
+}
+
+.canada {
+  stroke: #28a745; 
+}
+
+.canada:hover {
+  stroke: #ff6348; 
+  fill: #badc58; 
+}
+
+.mexico {
+  stroke: #ffc107; 
+}
+
+.mexico:hover {
+  stroke: #ff7f50;
+  fill: #ffdd59; 
+}
+
+
+.average {
+  stroke: #01213c; 
+}
+
+.average:hover {
+  stroke: #17a2b8; 
+  fill: #78c0e0; 
+}
